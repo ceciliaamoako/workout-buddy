@@ -1,6 +1,6 @@
 # GymBuddy
 
-A responsive React + TypeScript portfolio app for finding **platonic workout partners** and helping people who feel nervous walking into a commercial gym alone.
+A responsive React and TypeScript portfolio app for finding **workout partners** and helping people who feel nervous walking into a commercial gym alone.
 
 The core product idea is simple: instead of matching only by generic fitness interests, GymBuddy lets someone find a person who already knows a **specific gym** and is willing to meet at the entrance, or find another first-timer so they can figure it out together.
 
@@ -40,18 +40,12 @@ npm run build
 npm run preview
 ```
 
-## Current architecture
-
-This repository is intentionally a **front-end portfolio/demo implementation**. The people, gym names, ratings, and session data are fictional mock data. Actions such as saving profiles and session requests persist only in the browser.
-
-That makes the project easy to run for recruiters while leaving clear room for a production backend.
-
 ## Production roadmap
 
-Planned next steps for a real public release:
+Planned next steps for a real production release:
 
 1. Authentication and user onboarding
-2. PostgreSQL-backed profiles, gyms, availability, and sessions
+2. Proper backed profiles, gyms, availability, and sessions
 3. Geolocation / gym search integration
 4. Real matching and compatibility scoring
 5. Mutual session acceptance and in-app messaging
@@ -65,7 +59,6 @@ Planned next steps for a real public release:
 
 GymBuddy is designed to be:
 
-- **Platonic:** not a dating app
 - **Peer-based:** buddies are not paid personal trainers
 - **Gym-specific:** familiarity with the actual location matters
 - **Low pressure:** useful for first-timers and experienced gym-goers alike
@@ -73,4 +66,4 @@ GymBuddy is designed to be:
 
 ## Suggested GitHub description
 
-> GymBuddy is a React + TypeScript web app that matches gym-goers by location, workout style, preferences, and experience—including a walk-in companion flow for people nervous about going to the gym alone.
+> GymBuddy is a React and TypeScript web app that matches gym-goers by location, workout style, preferences, and experience, including a walk-in companion for people nervous about going to the gym alone.

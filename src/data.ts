@@ -2,8 +2,8 @@ import type { Buddy } from './types'
 
 export const gyms = [
   'Any gym',
-  'NoDa Fitness House',
-  'Uptown Strength Club',
+  'MADabolic Noda',
+  'The Fitness Factory of Charlotte',
   'South End Training Lab',
   'University Performance Gym',
 ]
@@ -30,7 +30,7 @@ export const buddies: Buddy[] = [
     initials: 'MA',
     age: 26,
     gender: 'Woman',
-    gym: 'NoDa Fitness House',
+    gym: 'MADabolic Noda',
     neighborhood: 'NoDa',
     experience: 'Intermediate',
     weight: 148,
@@ -68,8 +68,8 @@ export const buddies: Buddy[] = [
     initials: 'NI',
     age: 25,
     gender: 'Woman',
-    gym: 'Uptown Strength Club',
-    neighborhood: 'Uptown',
+    gym: 'The Fitness Factory of Charlotte',
+    neighborhood: 'Noda',
     experience: 'Beginner',
     weight: 158,
     workouts: ['Cardio', 'Full body', 'Functional training'],
