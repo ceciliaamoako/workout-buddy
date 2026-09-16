@@ -1,250 +1,76 @@
-# 🏋🏽 Gym Buddy
+# GymBuddy
 
-Gym Buddy is a web application designed to help people feel more comfortable going to the gym by connecting them with workout partners.
+A responsive React + TypeScript portfolio app for finding **platonic workout partners** and helping people who feel nervous walking into a commercial gym alone.
 
-The main idea is simple: **going to the gym is easier when you don't have to go alone.**
+The core product idea is simple: instead of matching only by generic fitness interests, GymBuddy lets someone find a person who already knows a **specific gym** and is willing to meet at the entrance, or find another first-timer so they can figure it out together.
 
-Gym Buddy is especially designed for people who are nervous about entering a commercial gym for the first time. Users can find someone who already knows a specific gym and is willing to walk in with them, show them around, or simply work out alongside them.
+## Demo features
 
-The app can also connect two people who are both new to the gym so they can figure things out together.
+- Discover workout buddies with filters for gym, workout type, gender preference, and weight range
+- Dedicated **Walk-in Companion** mode for first-time or nervous gym-goers
+- Save/unsave promising matches
+- Request a session with workout, date, time, and message
+- View and cancel pending session requests
+- Editable user profile and matching preferences
+- Browser persistence with `localStorage`
+- Responsive desktop and mobile layouts
+- Explicitly platonic, workout-focused product positioning
 
-> Gym Buddy is strictly focused on platonic workout connections. It is not a dating app and does not connect users with paid personal trainers.
+## Tech stack
 
----
+- React
+- TypeScript
+- Vite
+- CSS
+- Browser `localStorage` for demo persistence
 
-## 💡 Why I Built This
-
-Going to a gym for the first time can be intimidating.
-
-You may not know:
-
-* where equipment is located,
-* how the gym is organized,
-* what to expect when you walk in,
-* whether you're using equipment correctly,
-* or simply how to feel comfortable in an unfamiliar environment.
-
-That anxiety can be enough to stop someone from going altogether.
-
-Gym Buddy aims to remove some of that friction by helping users find someone to go with.
-
-Instead of trying to solve everything with tutorials or workout plans, the app focuses on something much simpler:
-
-**finding another person who can be there with you.**
-
----
-
-## ✨ Core Features
-
-### Walk In With Me
-
-Users who are nervous about visiting a gym can find someone who already goes to that specific gym.
-
-The experienced gym member can:
-
-* meet them at the gym,
-* walk in with them,
-* help them become familiar with the environment,
-* and optionally work out alongside them.
-
-The goal is companionship, not personal training.
-
----
-
-### 🤝 Find a Workout Partner
-
-Users can search for other people who want to work out at the same gym.
-
-Potential matching preferences include:
-
-* Gym location
-* Availability
-* Gender preference
-* Similar weight range
-* Workout type
-* Experience level
-
----
-
-### 🏃 Workout Preferences
-
-Users can indicate what kind of activity they want to do, including:
-
-* Push
-* Pull
-* Legs
-* Upper body
-* Full body
-* Core
-* Cardio
-* Functional training
-* Athletic training
-* Badminton
-* Tennis
-* Gymnastics
-* Rock climbing
-* Other fitness activities
-
----
-
-### 🆕 New Gym-Goer Matching
-
-Gym Buddy supports different types of connections:
-
-**Newcomer + Experienced Member**
-
-A first-time gym-goer can connect with someone who already knows the gym.
-
-**Newcomer + Newcomer**
-
-Two people who are both nervous or unfamiliar with the gym can go together and figure things out as a team.
-
-**Workout Partner + Workout Partner**
-
-Regular gym-goers can find people with similar schedules and workout goals.
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-
-* React
-* TypeScript
-* Vite
-* HTML
-* CSS
-
-Additional technologies will be added as the application grows.
-
----
-
-## 🚧 Project Status
-
-Gym Buddy is currently **in active development**.
-
-The current focus is building the frontend architecture and core user interactions using React and TypeScript.
-
-Current development includes:
-
-* reusable React components,
-* TypeScript interfaces and props,
-* state management,
-* workout preference selection,
-* interactive UI behavior,
-* and the foundation for the future matching experience.
-
----
-
-## 🗺️ Roadmap
-
-Planned functionality includes:
-
-* [ ] User authentication
-* [ ] User profiles
-* [ ] Gym selection
-* [ ] Gym search and location support
-* [ ] Workout preference selection
-* [ ] Availability scheduling
-* [ ] Experience-level preferences
-* [ ] Workout partner discovery
-* [ ] Walk-in companion matching
-* [ ] Matching filters
-* [ ] Match requests
-* [ ] User-to-user messaging
-* [ ] Profile verification
-* [ ] Reporting and blocking
-* [ ] Database integration
-* [ ] Backend API
-* [ ] Responsive mobile design
-* [ ] Production deployment
-
----
-
-## 💻 Running the Project Locally
-
-### Prerequisites
-
-Make sure you have installed:
-
-* Node.js
-* npm
-
-### 1. Clone the repository
-
-```bash
-git clone <your-repository-url>
-```
-
-### 2. Navigate into the project
-
-```bash
-cd workout-buddy
-```
-
-### 3. Install dependencies
+## Run locally
 
 ```bash
 npm install
-```
-
-### 4. Start the development server
-
-```bash
 npm run dev
 ```
 
-Vite will display the local development URL in your terminal.
+Then open the local Vite URL shown in your terminal.
 
----
+## Production build
 
+```bash
+npm run build
+npm run preview
+```
 
-## 🔒 Safety & Community
+## Current architecture
 
-Gym Buddy is intended to be a safe, platonic fitness community.
+This repository is intentionally a **front-end portfolio/demo implementation**. The people, gym names, ratings, and session data are fictional mock data. Actions such as saving profiles and session requests persist only in the browser.
 
-Future versions of the application are expected to include features such as:
+That makes the project easy to run for recruiters while leaving clear room for a production backend.
 
-* user verification,
-* reporting,
-* blocking,
-* privacy controls,
-* community guidelines,
-* and safety-focused matching controls.
+## Production roadmap
 
-Gym Buddy does not position users as personal trainers unless a future version explicitly introduces a separate verified professional feature.
+Planned next steps for a real public release:
 
----
+1. Authentication and user onboarding
+2. PostgreSQL-backed profiles, gyms, availability, and sessions
+3. Geolocation / gym search integration
+4. Real matching and compatibility scoring
+5. Mutual session acceptance and in-app messaging
+6. Reporting, blocking, moderation, and safety controls
+7. Email/push notifications
+8. Profile verification and anti-dating / anti-solicitation safeguards
+9. Automated tests and CI/CD
+10. Deployment of the frontend and API
 
-## 🌱 Future Ideas
+## Product principles
 
-Possible future expansions include:
+GymBuddy is designed to be:
 
-* group workout matching,
-* recurring workout partners,
-* gym communities,
-* compatibility scoring,
-* favorite workout partners,
-* workout session history,
-* friend groups,
-* fitness event discovery,
-* and recommendations based on previous matches.
+- **Platonic:** not a dating app
+- **Peer-based:** buddies are not paid personal trainers
+- **Gym-specific:** familiarity with the actual location matters
+- **Low pressure:** useful for first-timers and experienced gym-goers alike
+- **Safety-conscious:** public-gym meetups, clear boundaries, and moderation are part of the production roadmap
 
----
+## Suggested GitHub description
 
-## 👩🏽‍💻 Author
-
-**Cecilia Amoako**
-
-Software Engineer
-
-* GitHub: [github.com/ceciliaamoako](https://github.com/ceciliaamoako)
-* LinkedIn: [linkedin.com/in/ceciliaamoako](https://www.linkedin.com/in/ceciliaamoako)
-
----
-
-## 📄 License
-
-This project is currently being developed as a personal software engineering project.
-
-Licensing information may be added as the project develops.
+> GymBuddy is a React + TypeScript web app that matches gym-goers by location, workout style, preferences, and experience—including a walk-in companion flow for people nervous about going to the gym alone.
